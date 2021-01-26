@@ -1,6 +1,5 @@
 let city = "Bucharest"
 const searchBut = document.getElementById("search");
-//const APIURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=ab2d4d7bd8c1d510a1d9addc78aa05d1`;
 
 function getWeather(link) {
     fetch(link)
