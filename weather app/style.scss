@@ -1,0 +1,146 @@
+$shadow :0px 0px 6px rgba(0,0,0,0.17);
+$hoverColor:rgb(0, 68, 77);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#64c8e6,#8dd5eb, #7faecf);
+    width: 100%;
+    height: 100vh;
+}
+
+#nav{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    h1{
+        font-size: 40px;
+        cursor: pointer;
+        text-shadow: $shadow;
+    }
+    h2{
+        font-size: 34px;
+        cursor: pointer;
+        text-shadow: $shadow;
+    }
+    h1:hover{
+        color: $hoverColor;
+    }
+    h2:hover{
+        color: $hoverColor;
+    }
+}
+
+#container{
+    position: relative;
+    width: 95%;
+    height: 1210px;
+    background-color: transparent;
+    margin: auto;
+    top: 100px;
+    #getCity{
+        position: absolute;
+        background-color: transparent;
+        width: 56%;
+        height: 500px;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #butText{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+    #cityInput{
+        width: 300px;
+        height: 80px;
+        border-radius: 80px;
+        outline: none;
+        background-color: transparent;
+        border: 6px solid white;
+        text-align: center;
+        color: white;
+        font-size: 35px;
+    }
+    #search{
+        border-radius: 30px;
+        width: 120px;
+        height: 50px;
+        border: none;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        position: absolute;
+        top: 60%;
+        cursor: pointer;
+        outline: none;
+        box-shadow: $shadow;
+    }
+    #info{
+        position: absolute;
+        background-color: transparent;
+        width: 42%;
+        height: 600px;
+        top: 80px;
+        right: 0px;
+        padding-top: 110px;
+        .infoDate{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            margin-top: 20px;
+            text-align: center;
+            text-shadow: $shadow;
+        }
+    }
+
+    #sun{
+        position: absolute;
+        bottom: 230px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        background-color: transparent;
+        margin: auto;
+        width: 100%;
+        #infoSun{
+            margin-top: 10px;
+        }
+        #sunIcon{
+            font-size: 100px;
+            color: rgb(218, 218, 0);
+        }
+        #moonIcon{
+            font-size: 100px;
+            color: rgba(0, 0, 0, 0.466);
+        }
+        #time{
+            font-size: 37px;
+            color: $hoverColor;  
+        }
+    }
+
+    #search:hover{
+        background-color: $hoverColor;
+    }
+    @media only screen and (min-width:1800px) {
+        #info{
+            right:200px;
+        }
+    }
+}

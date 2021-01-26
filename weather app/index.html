@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>Weather App</h1>
+        <h2>Info</h2>
+    </div>
+    <div id="container">
+        <div id="getCity">
+            <input type="text" id="cityInput" placeholder="Search...">
+            <button id="search"><h2 id="butText">Search City</h2></button>
+        </div>
+        <div id="info">
+            <h2 id="cityName" class="infoDate"></h2>
+            <h3 id="temperature" class="infoDate"></h3>
+            <h3 id="weatherDes" class="infoDate"></h3>
+            <h3 id="clouds" class="infoDate"></h3>
+            <h3 id="clock" class="infoDate"></h3>
+            <h3 id="windSpeed" class="infoDate"></h3>
+            <h3 id="humidity" class="infoDate"></h3>
+            
+        </div>
+        <div id="sun">
+        <h3 id="timePerspectiv" class="infoSun"></h3>
+        <h3 id="sunrise" class="infoSun"></h3>
+        <br>
+        <h3 id="sunset" class="infoSun"></h3>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
